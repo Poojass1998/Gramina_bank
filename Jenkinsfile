@@ -19,7 +19,7 @@ pipeline {
                 mkdir -p /tmp/deployment_directory_master
 
                 # Copy the index.html file from the Jenkins workspace
-                cp $WORKSPACE/index.html /tmp/deployment_directory_master/
+                cp $WORKSPACE/intedx.html /tmp/deployment_directory_master/
 
                 # Start the Python HTTP server on port 9090
                 nohup python3 -m http.server 9090 --directory /tmp/deployment_directory_master > /tmp/server_master.log 2>&1 &
